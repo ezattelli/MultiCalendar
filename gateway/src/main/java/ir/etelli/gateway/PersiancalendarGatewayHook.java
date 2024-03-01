@@ -21,9 +21,6 @@ import ir.etelli.common.component.PersianCalendar;
 import ir.etelli.common.component.PersianDatePiker;
 import ir.etelli.common.component.PersianDatePikerRange;
 
-/**
- * Class which is instantiated by the Ignition platform when the module is loaded in the gateway scope.
- */
 public class PersiancalendarGatewayHook extends AbstractGatewayModuleHook {
 
     private ComponentRegistry componentRegistry;
@@ -95,25 +92,4 @@ public class PersiancalendarGatewayHook extends AbstractGatewayModuleHook {
     }
 
 
-//    @Override
-//    public Optional<OverviewContributor> getStatusOverviewContributor() {
-//        return Optional.empty();
-//    }
-
-
-//    @Override
-//    public Optional<ConfigOverviewContributor> getConfigOverviewContributor() {
-//        return Optional.empty();
-//    }
-
-
-//    @Override
-//    public void initializeResourceTypeAdapterRegistry(ResourceTypeAdapterRegistry registry) {
-//
-//    }
-
-//    @Override
-//    public void onMountedResourceRequest(String resourcePath, HttpServletResponse response) {
-//
-//    }
 }

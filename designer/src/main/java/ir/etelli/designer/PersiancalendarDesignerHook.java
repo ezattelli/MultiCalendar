@@ -14,13 +14,10 @@ import ir.etelli.common.component.PersianDatePikerRange;
  * This is the Designer-scope module hook.  The minimal implementation contains a startup method.
  */
 public class PersiancalendarDesignerHook extends AbstractDesignerModuleHook {
-
-    // override additonal methods as requried
     private DesignerComponentRegistry registry;
 
     @Override
     public void startup(DesignerContext context, LicenseState activationState) throws Exception {
-        // implelement functionality as required
         PerspectiveDesignerInterface pdi = PerspectiveDesignerInterface.get(context);
         registry = pdi.getDesignerComponentRegistry();
         registry.registerComponent(PersianCalendar.DESCRIPTOR);
