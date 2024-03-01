@@ -2,7 +2,7 @@ pluginManagement {
     repositories {
         gradlePluginPortal()
         maven {
-            url = "https://nexus.inductiveautomation.com/repository/public" 
+            url = "https://nexus.inductiveautomation.com/repository/public"
         }
     }
 }

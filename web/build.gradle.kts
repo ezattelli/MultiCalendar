@@ -3,7 +3,7 @@ import com.github.gradle.node.npm.task.NpmTask
 
 plugins {
     java
-    id("com.github.node-gradle.node") version("3.2.1")
+    id("com.github.node-gradle.node") version ("3.2.1")
 }
 // define a variable that describes the path to the mounted gateway folder, where we want to put things eventually
 val projectOutput: String by extra("$buildDir/generated-resources/")
@@ -31,16 +31,16 @@ val yarnPackages by tasks.registering(YarnTask::class) {
     // which have already been installed.  If changes to package.json or yarn.lock are detected, then it will execute
     // the install task again.
     inputs.files(
-        fileTree(project.projectDir).matching {
-            include("**/package.json", "**/yarn.lock")
-        }
+            fileTree(project.projectDir).matching {
+                include("**/package.json", "**/yarn.lock")
+            }
     )
 
     // outputs of running 'yarn install'
     outputs.dirs(
-        file("node_modules"),
-        file("packages/client/node_modules"),
-        file("packages/designer/node_modules")
+            file("node_modules"),
+            file("packages/client/node_modules"),
+            file("packages/designer/node_modules")
     )
 
     dependsOn("${project.path}:yarn", ":web:npmSetup")

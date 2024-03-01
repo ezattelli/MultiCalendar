@@ -11,19 +11,18 @@ public class PersianCalendar {
 
 
     public static JsonSchema SCHEMA =
-        JsonSchema.parse(PersianCalendar.class.getResourceAsStream("/persiancalendar.props.json"));
-
+            JsonSchema.parse(PersianCalendar.class.getResourceAsStream("/persiancalendar.props.json"));
 
 
     public static ComponentDescriptor DESCRIPTOR = ComponentDescriptorImpl.ComponentBuilder.newBuilder()
-        .setPaletteCategory(PersiancalendarModule.COMPONENT_CATEGORY)
-        .setId(COMPONENT_ID)
-        .setModuleId(PersiancalendarModule.MODULE_ID)
-        .setSchema(SCHEMA)
-        .setName("Calendar")
-        .addPaletteEntry("", "Calendar", "Multi Calendar: gregorian,persian,jalali,arabic,indian.", null, null)
-        .setDefaultMetaName("Calendar")
-        .setResources(PersiancalendarModule.BROWSER_RESOURCES)
-        .build();
+            .setPaletteCategory(PersiancalendarModule.COMPONENT_CATEGORY)
+            .setId(COMPONENT_ID)
+            .setModuleId(PersiancalendarModule.MODULE_ID)
+            .setSchema(SCHEMA)
+            .setName("Calendar")
+            .addPaletteEntry("", "Calendar", "Multi Calendar: gregorian,persian,jalali,arabic,indian.", null, null)
+            .setDefaultMetaName("Calendar")
+            .setResources(PersiancalendarModule.BROWSER_RESOURCES)
+            .build();
 
 }

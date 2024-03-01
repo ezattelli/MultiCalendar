@@ -15,15 +15,16 @@ export interface PersianCalendarProps {
     calendar: string;
     locale: string;
     date: object;
-    color:string;
-    background:string;
-    startDay : string;
-    timePicker : boolean;
-    dateObject:object;
+    color: string;
+    background: string;
+    startDay: string;
+    timePicker: boolean;
+    dateObject: object;
 }
 
 
-const week = {"Sun":0,"Mon":1,"Tue":2,"Wed":3,"Thu":4,"Fri":5,"Sat":6}
+const week = {"Sun": 0, "Mon": 1, "Tue": 2, "Wed": 3, "Thu": 4, "Fri": 5, "Sat": 6}
+
 export class PersianCalendar extends Component<ComponentProps<PersianCalendarProps>, any> {
 
 
@@ -34,7 +35,7 @@ export class PersianCalendar extends Component<ComponentProps<PersianCalendarPro
                 <Calendar
 
                     plugins={[
-                        <TimePicker disabled={!props.timePicker} position="bottom" />
+                        <TimePicker disabled={!props.timePicker} position="bottom"/>
                     ]}
 
                     className={props.color + " " + props.background}
@@ -47,7 +48,7 @@ export class PersianCalendar extends Component<ComponentProps<PersianCalendarPro
 
                         (ob: DateObject) => {
                             let DO = new DateObject(ob)
-                            let cal:any = props.calendar
+                            let cal: any = props.calendar
                             console.log(ob.toDate())
                             console.log(typeof ob.toDate())
                             this.props.store.props.write("dateObject", JSON.parse(JSON.stringify(DO.convert(cal))))
@@ -87,9 +88,9 @@ export class PersianCalendarMeta implements ComponentMeta {
             date: tree.readObject("date"),
             color: tree.readString("color", ''),
             startDay: tree.readString("startDay", "Sun"),
-            dateObject:tree.readObject("dateObject"),
-            background:tree.readString("background"),
-            timePicker:tree.readBoolean("timePicker")
+            dateObject: tree.readObject("dateObject"),
+            background: tree.readString("background"),
+            timePicker: tree.readBoolean("timePicker")
         };
     }
 

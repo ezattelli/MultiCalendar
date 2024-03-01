@@ -8,7 +8,7 @@
  */
 
 plugins {
-    id("io.ia.sdk.modl") version("0.1.1")
+    id("io.ia.sdk.modl") version ("0.1.1")
 }
 
 val sdk_version by extra("8.1.20")
@@ -53,12 +53,12 @@ ignitionModule {
      *  Example entry: listOf( ":gateway" to "G", ":common" to "GC", ":vision-client" to "C" )
      */
     projectScopes.putAll(
-        mapOf(
-            ":gateway" to "G",
-            ":web" to "G",
-            ":designer" to "D",
-            ":common" to "GD"
-        )
+            mapOf(
+                    ":gateway" to "G",
+                    ":web" to "G",
+                    ":designer" to "D",
+                    ":common" to "GD"
+            )
     )
     /*
      * Add your module dependencies here, following the examples, with scope being one or more of G, C or D,
@@ -78,10 +78,10 @@ ignitionModule {
      * Example entry: "com.myorganization.vectorizer.VectorizerDesignerHook" to "D"
      */
     hooks.putAll(
-        mapOf(
-            "ir.etelli.gateway.PersiancalendarGatewayHook" to "G",
-            "ir.etelli.designer.PersiancalendarDesignerHook" to "D"
-        )
+            mapOf(
+                    "ir.etelli.gateway.PersiancalendarGatewayHook" to "G",
+                    "ir.etelli.designer.PersiancalendarDesignerHook" to "D"
+            )
     )
     /*
      * Optional 'documentation' settings.  Supply the files that would be desired to end up in the 'doc' dir of the

@@ -16,10 +16,10 @@ export interface PersianDatePickerProps {
     locale: string;
     date: object;
     color: string;
-    background:string;
+    background: string;
     startDay: string;
-    timePicker : boolean;
-    dateObject:object;
+    timePicker: boolean;
+    dateObject: object;
 
 }
 
@@ -40,7 +40,7 @@ export class PersianDatePicker extends Component<ComponentProps<PersianDatePicke
                 <DatePicker
 
                     plugins={[
-                        <TimePicker disabled={!props.timePicker} position="bottom" />
+                        <TimePicker disabled={!props.timePicker} position="bottom"/>
                     ]}
 
                     className={props.color + " " + props.background}
@@ -90,9 +90,9 @@ export class PersianDatePickerMeta implements ComponentMeta {
             date: tree.readObject("date"),
             color: tree.readString("color", ''),
             startDay: tree.readString("startDay", "Sun"),
-            dateObject:tree.readObject("dateObject"),
-            background:tree.readString("background"),
-            timePicker:tree.readBoolean("timePicker")
+            dateObject: tree.readObject("dateObject"),
+            background: tree.readString("background"),
+            timePicker: tree.readBoolean("timePicker")
         };
     }
 

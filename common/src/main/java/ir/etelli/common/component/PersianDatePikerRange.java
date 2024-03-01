@@ -11,19 +11,18 @@ public class PersianDatePikerRange {
 
 
     public static JsonSchema SCHEMA =
-        JsonSchema.parse(PersianDatePikerRange.class.getResourceAsStream("/persiancalendarrange.props.json"));
-
+            JsonSchema.parse(PersianDatePikerRange.class.getResourceAsStream("/persiancalendarrange.props.json"));
 
 
     public static ComponentDescriptor DESCRIPTOR = ComponentDescriptorImpl.ComponentBuilder.newBuilder()
-        .setPaletteCategory(PersiancalendarModule.COMPONENT_CATEGORY)
-        .setId(COMPONENT_ID)
-        .setModuleId(PersiancalendarModule.MODULE_ID)
-        .setSchema(SCHEMA)
-        .setName("DatePickerRange")
-        .addPaletteEntry("", "DatePicker Range", "Multi DatePicker Range: gregorian,persian,jalali,arabic,indian.", null, null)
-        .setDefaultMetaName("DatePicker Range")
-        .setResources(PersiancalendarModule.BROWSER_RESOURCES)
-        .build();
+            .setPaletteCategory(PersiancalendarModule.COMPONENT_CATEGORY)
+            .setId(COMPONENT_ID)
+            .setModuleId(PersiancalendarModule.MODULE_ID)
+            .setSchema(SCHEMA)
+            .setName("DatePickerRange")
+            .addPaletteEntry("", "DatePicker Range", "Multi DatePicker Range: gregorian,persian,jalali,arabic,indian.", null, null)
+            .setDefaultMetaName("DatePicker Range")
+            .setResources(PersiancalendarModule.BROWSER_RESOURCES)
+            .build();
 
 }

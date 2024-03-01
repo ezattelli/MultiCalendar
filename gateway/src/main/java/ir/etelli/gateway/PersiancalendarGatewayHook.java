@@ -26,6 +26,7 @@ public class PersiancalendarGatewayHook extends AbstractGatewayModuleHook {
     private ComponentRegistry componentRegistry;
 
     private GatewayContext gatewayContext;
+
     @Override
     public void setup(GatewayContext context) {
         this.gatewayContext = context;
