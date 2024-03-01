@@ -2,18 +2,13 @@ package ir.etelli.gateway;
 
 import java.util.List;
 import java.util.Optional;
-import javax.servlet.http.HttpServletResponse;
 
 import com.inductiveautomation.ignition.common.licensing.LicenseState;
-import com.inductiveautomation.ignition.common.project.resource.adapter.ResourceTypeAdapterRegistry;
 import com.inductiveautomation.ignition.gateway.dataroutes.RouteGroup;
 import com.inductiveautomation.ignition.gateway.model.AbstractGatewayModuleHook;
 import com.inductiveautomation.ignition.gateway.model.GatewayContext;
 import com.inductiveautomation.ignition.gateway.web.models.ConfigCategory;
 import com.inductiveautomation.ignition.gateway.web.models.IConfigTab;
-import com.inductiveautomation.ignition.gateway.web.models.SystemMap;
-import com.inductiveautomation.ignition.gateway.web.pages.config.overviewmeta.ConfigOverviewContributor;
-import com.inductiveautomation.ignition.gateway.web.pages.status.overviewmeta.OverviewContributor;
 import com.inductiveautomation.perspective.common.api.ComponentRegistry;
 import com.inductiveautomation.perspective.gateway.api.PerspectiveContext;
 import ir.etelli.common.PersiancalendarModule;
