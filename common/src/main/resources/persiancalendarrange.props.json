@@ -1,0 +1,162 @@
+{
+  "type": "object",
+  "properties": {
+    "calendar": {
+      "type": "string",
+      "description": "choose your favorite calendar",
+      "enum": [
+        "gregorian",
+        "persian",
+        "jalali",
+        "arabic",
+        "indian"
+      ],
+      "default": "gregorian"
+    },
+    "locale": {
+      "type": "string",
+      "description": "choose language",
+      "enum": [
+        "en",
+        "fa",
+        "ar",
+        "hi"
+      ],
+      "default": "en"
+    },
+    "startDay": {
+      "type": "string",
+      "description": "first day of week",
+      "enum": [
+        "Sun",
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "default": "Sun"
+    },
+    "timePicker": {
+      "type": "boolean",
+      "description": "enable timepicker",
+      "enum": [
+        true,
+        false
+      ],
+      "default": false
+    },
+    "color": {
+      "type": "string",
+      "description": "choose Color",
+      "enum": [
+        "green",
+        "red",
+        "yellow",
+        "purple",
+        "teal"
+      ],
+      "default": "green"
+    },
+    "background": {
+      "type": "string",
+      "description": "choose Color",
+      "enum": [
+        "",
+        "bg-dark",
+        "bg-gray",
+        "bg-brown"
+      ],
+      "default": ""
+    },
+    "date": {
+      "type": "object",
+      "description": "data range array",
+      "default": {
+        "start": {
+          "$": [
+            "ts",
+            0,
+            1709104425112
+          ],
+          "$ts": 1560469434123
+        },
+        "end": {
+          "$": [
+            "ts",
+            0,
+            1709104454937
+          ],
+          "$ts": 1560469437723
+        }
+      }
+    },
+    "dateObject": {
+      "type": "array",
+      "description": "data range array",
+      "default": [
+        {
+          "year": 2024,
+          "month": {
+            "length": 29,
+            "name": "February",
+            "shortName": "Feb",
+            "index": 1,
+            "number": 2
+          },
+          "day": 1,
+          "weekDay": {
+            "index": 4,
+            "number": 5,
+            "name": "Thursday",
+            "shortName": "Thu"
+          },
+          "hour": 16,
+          "minute": 49,
+          "second": 18,
+          "millisecond": 85,
+          "weekOfYear": 5,
+          "dayOfYear": 32,
+          "daysLeft": 334,
+          "calendar": "gregorian",
+          "locale": "en",
+          "format": "YYYY/MM/DD"
+        },
+        {
+          "year": 2024,
+          "month": {
+            "length": 29,
+            "name": "February",
+            "shortName": "Feb",
+            "index": 1,
+            "number": 2
+          },
+          "day": 29,
+          "weekDay": {
+            "index": 4,
+            "number": 5,
+            "name": "Thursday",
+            "shortName": "Thu"
+          },
+          "hour": 16,
+          "minute": 49,
+          "second": 18,
+          "millisecond": 85,
+          "weekOfYear": 9,
+          "dayOfYear": 60,
+          "daysLeft": 306,
+          "calendar": "gregorian",
+          "locale": "en",
+          "format": "YYYY/MM/DD"
+        }
+      ]
+    },
+    "style": {
+      "$ref": "urn:ignition-schema:schemas/style-properties.schema.json",
+      "default": {
+        "classes": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven {
+            url = "https://nexus.inductiveautomation.com/repository/public" 
+        }
+    }
+}
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+
+rootProject.name = "multicalendar"
+
+dependencyResolutionManagement {
+    repositories {
+        // enable resolving dependencies from the inductive automation artifact repository
+        maven {
+            url "https://nexus.inductiveautomation.com/repository/public"
+        }
+        mavenCentral()
+    }
+}
+
+include(":common", ":gateway", ":designer", ":web")
+

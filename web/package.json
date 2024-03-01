@@ -1,0 +1,26 @@
+{
+  "name": "persian-calendar-web",
+  "version": "1.0.0",
+  "description": "persian calendar web package to distribute to nexus npm",
+  "main": "dist/index.js",
+  "author": "Etelli",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "lerna run build",
+    "clean": "lerna clean",
+    "check": "lerna check"
+  },
+  "devDependencies": {
+    "lerna": "3.22.1"
+  },
+  "dependencies": {
+    "mydatepicker": "^2.6.11",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-multi-date-picker": "^2.10.1"
+  }
+}

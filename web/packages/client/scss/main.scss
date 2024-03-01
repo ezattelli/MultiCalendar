@@ -1,0 +1,28 @@
+// main stylesheet, import all scss files here for inclusion by webpack
+//@import
+//"tag-counter",
+//"messenger";
+@import "react-multi-date-picker/styles/colors/yellow";
+@import "react-multi-date-picker/styles/colors/green";
+@import "react-multi-date-picker/styles/colors/red";
+@import "react-multi-date-picker/styles/colors/purple";
+@import "react-multi-date-picker/styles/colors/teal";
+@import "react-multi-date-picker/styles/backgrounds/bg-dark";
+@import "react-multi-date-picker/styles/backgrounds/bg-gray";
+@import "react-multi-date-picker/styles/backgrounds/bg-brown";
+
+
+.custom-input {
+  border-radius: 15px;
+  border: 1px #0c8af8 solid;
+  padding: 4px 12px;
+  background-color: white;
+  height: 22px;
+  box-shadow: 0 0 2px #0074d9;
+}
+
+.custom-input:focus {
+  outline: none;
+  border: 1px solid #0c8af8;
+  box-shadow: 0 0 10px 2px #0074d9;
+}

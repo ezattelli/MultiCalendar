@@ -1,0 +1,27 @@
+{
+  "year": "object",
+  "month": {
+    "length": "number",
+    "name": "string",
+    "shortName": "string",
+    "index": "number",
+    "number": "number"
+  },
+  "day": "object",
+  "weekDay": {
+    "index": "number",
+    "number": "number",
+    "name": "string",
+    "shortName": "string"
+  },
+  "hour": "number",
+  "minute": "number",
+  "second": "number",
+  "millisecond": "number",
+  "weekOfYear": "number",
+  "dayOfYear": "number",
+  "daysLeft": "number",
+  "calendar": "string",
+  "locale": "string",
+  "format": "string"
+}
